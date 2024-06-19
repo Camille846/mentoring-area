@@ -4,8 +4,7 @@ import CalendarSection from "@/components/sections/CalendarSection";
 import FaqSection from "@/components/sections/FaqSection";
 import FooterSection from "@/components/sections/FooterSection";
 import HeroSection from "@/components/sections/HeroSection";
-import { Calendar } from "lucide-react";
-import Image from "next/image";
+// import Leaders from "@/components/sections/Leaders";
 
 export default function Home() {
   return (
