@@ -1,6 +1,7 @@
 import NavBar from "@/components/common/NavBar";
 import AboutSection from "@/components/sections/AboutSection";
 import CalendarSection from "@/components/sections/CalendarSection";
+import FaqSection from "@/components/sections/FaqSection";
 import FooterSection from "@/components/sections/FooterSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { Calendar } from "lucide-react";
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <CalendarSection />
+      <FaqSection />
       <FooterSection />
     </main>
   );

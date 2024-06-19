@@ -11,7 +11,7 @@ import {
 function AboutSection() {
   return (
     <section className="pt-10 pb-32 px-8 bg-background">
-      <div className="m-40 grid grid-cols-4 gap-5 justify-center items-center">
+      <div className="m-40 grid grid-cols-4 gap-5 justify-center items-center max-md:grid-cols-1 max-md:m-0 max-2xl:grid-cols-2 max-2xl:m-0">
       <Card className="hover:bg-background cursor-pointer">
           <CardHeader>
             <CardTitle>Manual</CardTitle>
@@ -27,13 +27,13 @@ function AboutSection() {
         <Card className="hover:bg-background cursor-pointer">
         <CardHeader>
             <CardTitle>Support Material</CardTitle>
-            <CardDescription>Collection of support materials based on different English levels. Access a shared drive with collaborative spreadsheets, interactive platforms designed for engaging mentorship sessions, and the classes schedule for inspiration and guidance. </CardDescription>
+            <CardDescription>Collection of support materials based on different English levels. Access a shared drive with collaborative spreadsheets, interactive platforms designed for engaging mentorship sessions, and the classes schedule for guidance. </CardDescription>
           </CardHeader>
         </Card>
         <Card className="hover:bg-background cursor-pointer">
         <CardHeader>
             <CardTitle>Mentoring Validation Form</CardTitle>
-            <CardDescription>The Mentoring Validation Form is the document that proves to us that you and your student did the mentoring. We have around 1000 mentorings per month, so this system was the best one we could find to validate all mentoring sessions in a reasonable time.</CardDescription>
+            <CardDescription>The Mentoring Validation Form is the document that proves to us that you and your student did the mentoring. We have around 1000 mentorings per month, so in this way, we can validate all mentoring sessions in a reasonable time.</CardDescription>
           </CardHeader>
         </Card>
       </div>
