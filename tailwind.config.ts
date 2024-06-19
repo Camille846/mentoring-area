@@ -1,3 +1,4 @@
+import { text } from "stream/consumers"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -16,6 +17,15 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
+    },
+    colors: {
+      primary: "#163f6b",
+      secondary: "#ffa500",
+      orange: "#f45a2b",
+      background: "#fafafa",
+      white: "#ffffff",
+      text: "#2d2d2d",
+      blueText: "#01406C",
     },
     extend: {
       keyframes: {
