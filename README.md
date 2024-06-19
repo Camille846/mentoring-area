@@ -1,2 +1,2 @@
-# rise-landing-page
-An alternate rise landing page built with Next14, Shadcn, and Tailwind.
+# Mentoring Area Page
+Landing page built with Next14, Shadcn, and Tailwind.
