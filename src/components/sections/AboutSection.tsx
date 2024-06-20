@@ -25,17 +25,6 @@ function AboutSection() {
         </Card>
         <Card className="hover:bg-background cursor-pointer">
           <CardHeader>
-            <CardTitle>Matching Platform</CardTitle>
-            <CardDescription>
-              Our matching platform connects you with our Soul Students. While
-              you can select up to two students, we encourage you to initially
-              choose one to ensure everyone has a chance to mentor. You can
-              select your second student after 2 days.{" "}
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card className="hover:bg-background cursor-pointer">
-          <CardHeader>
             <CardTitle>Support Material</CardTitle>
             <CardDescription>
               Collection of support materials based on different English levels.
@@ -53,6 +42,17 @@ function AboutSection() {
               that you and your student did the mentoring. We have around 1000
               mentorings per month, so in this way, we can validate all
               mentoring sessions in a reasonable time.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card className="hover:bg-background cursor-pointer">
+          <CardHeader>
+            <CardTitle>Matching Platform</CardTitle>
+            <CardDescription>
+              Our matching platform connects you with our Soul Students. While
+              you can select up to two students, we encourage you to initially
+              choose one to ensure everyone has a chance to mentor. You can
+              select your second student after 2 days.{" "}
             </CardDescription>
           </CardHeader>
         </Card>

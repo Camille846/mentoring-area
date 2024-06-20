@@ -4,14 +4,23 @@ import Image from "next/image";
 
 function FooterSection() {
   return (
-    <section className="flex justify-around px-8 pt-14 pb-14 bg-primary">
-      <div className="flex flex-col gap-5 justify-start px-8 pt-10 pb-10 bg-primary">
+    <section className="flex justify-between px-72 pt-14 pb-14 bg-primary relative">
+        <div className="flex justify-center items-center">
+          <a
+            href="https://www.soulbilingue.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image src="/logo-branco.png" width={200} height={200} alt="logo" />
+          </a>
+        </div>
+      <div className="flex flex-col gap-5 justify-center items-center pt-10 pb-10 bg-primary">
         <h2>
-          <span className="text-[15.8px] md:text-[28px] text-center text-white">
+          <span className="text-[15.8px] md:text-[28px] text-white text-center">
             In case you have issues, contact:
           </span>
         </h2>
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1.5  text-center">
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold">Coordinator</span>
           </p>
@@ -21,7 +30,7 @@ function FooterSection() {
             </a>
           </p>
         </div>
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1.5  text-center">
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold"> Facilitator </span>
           </p>
@@ -32,16 +41,7 @@ function FooterSection() {
           </p>
         </div>
       </div>
-        <div className="relative flex justify-center items-center">
-          <a
-            href="https://www.soulbilingue.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src="/logo-branco.png" width={250} height={250} alt="logo" />
-          </a>
-        </div>
-      <div className="flex flex-col gap-10 justify-start px-8 pt-10 pb-10 bg-primary">
+      <div className="flex flex-col gap-10 justify-start pt-10 pb-10 bg-primary">
         <div className="flex flex-col gap-1.5">
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold">Links rápidos</span>
