@@ -84,15 +84,15 @@ function FaqSection() {
     },
   ];
   return (
-    <section className="bg-background flex flex-col justify-center mt-32">
-      <div className="mx-80 mt-20">
+    <section className="bg-background flex flex-col justify-center mt-32 max-md:mx-0">
+      <div className="mx-80 mt-20 max-md:mx-0">
         <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
           Frequent Asked Questions
         </h2>
       </div>
 
-      <div className="mx-80 mb-20 text-text">
-        <Accordion type="multiple" className="text-text">
+      <div className="mx-80 mb-20 text-text max-md:mx-5">
+        <Accordion type="multiple" className="text-text max-md:text-[13px]">
           {questions.map((question) => (
             <AccordionItem key={question.id} value={question.id}>
               <AccordionTrigger>{question.question}</AccordionTrigger>
