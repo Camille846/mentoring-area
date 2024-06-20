@@ -22,10 +22,13 @@ const config = {
       primary: "#163f6b",
       secondary: "#ffa500",
       orange: "#f45a2b",
+      darkOrange: "#c76f3c",
       background: "#fafafa",
       white: "#ffffff",
       text: "#2d2d2d",
       blueText: "#01406C",
+      lightBlue: "#7191c8",
+
     },
     extend: {
       keyframes: {
@@ -42,6 +45,9 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        'hero-pattern': "url('/hero.svg')",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

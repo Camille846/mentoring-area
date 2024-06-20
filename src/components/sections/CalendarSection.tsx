@@ -30,8 +30,8 @@ function CalendarSection() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center mt-32 mb-32 px-8">
-      <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-8 mb-10">
+    <section className="flex flex-col justify-center items-center mt-20 mb-20 px-8">
+      <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
         Calendar
       </h2>
 
@@ -45,13 +45,13 @@ function CalendarSection() {
               {event_data.map((event, index) => (
                 <div key={index}>
                   <div className="text-[18px] flex items-center gap-3">
-                    <div className="text-[#706D79] bg-background w-16 h-16 rounded-full p-2 flex items-center justify-center">
+                    <div className="text-secondary bg-primary w-16 h-16 rounded-full p-2 flex items-center justify-center">
                       <CalendarDays />
                     </div>
-                    <div className="text-[#706D79] flex gap-2">
+                    <div className="text-text flex gap-2">
                       {event.date} {event && <ChevronRight />}{" "}
                     </div>
-                    <div className="text-[#333] font-bold ">{event.event}</div>
+                    <div className="text-blueText font-bold ">{event.event}</div>
                   </div>
                   {!event.is_last && (
                     <div>
@@ -68,8 +68,8 @@ function CalendarSection() {
           <CarouselItem>...</CarouselItem>
           <CarouselItem>...</CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="bg-orange text-primary"/>
+        <CarouselNext className="bg-orange text-primary" />
       </Carousel>
     </section>
   );
