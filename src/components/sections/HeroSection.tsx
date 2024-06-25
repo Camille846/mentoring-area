@@ -10,7 +10,7 @@ function HeroSection() {
       <div>
         <Image src="/logo.png" width={200} height={200} alt="logo" />
       </div>
-      <h1 className="text-[35.8px] md:text-[6rem] text-center mt-8 text-primary font-bold font-title">
+      <h1 className="text-[35.8px] md:text-[6rem] text-center mt-8 text-primary font-bold">
         Mentoring Area
       </h1>
       <p className="font-semibold text-center my-4 text-text max-md:text-[13px] max-md:p-3">

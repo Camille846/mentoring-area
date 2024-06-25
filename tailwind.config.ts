@@ -1,4 +1,3 @@
-import { Press_Start_2P } from "next/font"
 import { text } from "stream/consumers"
 import type { Config } from "tailwindcss"
 
@@ -33,7 +32,6 @@ const config = {
     },
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
-      title: ["Press Start 2P", "cursive"],
     },
     extend: {
       keyframes: {
