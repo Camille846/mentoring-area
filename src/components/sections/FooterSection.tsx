@@ -24,7 +24,7 @@ function FooterSection() {
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold">Coordinator</span>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:font-bold">
             <a href="mailto:mentoring@soulbilingue.com">
               mentoring@soulbilingue.com
             </a>
@@ -34,7 +34,7 @@ function FooterSection() {
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold"> Facilitator </span>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:font-bold">
             <a href="mailto:adam.sousa@soulbilingue.com">
               adam.sousa@soulbilingue.com
             </a>
@@ -46,27 +46,27 @@ function FooterSection() {
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold">Links rápidos</span>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:text-orange">
             <a href="https://www.soulbilingue.com/quemsomos" target="_blank">
             Sobre
             </a>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:text-orange">
             <a href="https://www.soulbilingue.com/doe" target="_blank">
             Apoie
             </a>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:text-orange">
             <a href="https://www.soulbilingue.com/_files/ugd/e9f2c6_23c44046d14748a6b451666c915e65c8.pdf" target="_blank">
             Código de Conduta
             </a>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:text-orange">
             <a href="https://www.soulbilingue.com/_files/ugd/91eed0_3f8f9ba1e1464f6cb51a9821304638c5.pdf" target="_blank">
             Política de Privacidade
             </a>
           </p>
-          <p className="text-[14px] md:text-[18px] text-white">
+          <p className="text-[14px] md:text-[18px] text-white hover:text-orange">
             <a href="https://www.soulbilingue.com/_files/ugd/e9f2c6_0e1ce78472114492a1df681abc0e2242.pdf"target="_blank">
             Estatuto social
             </a>

@@ -13,7 +13,7 @@ function CarouselItemContent({ data }: { data: Event[] }) {
             <div className="text-secondary text-xl bg-primary w-16 h-16 rounded-full flex items-center justify-center max-md:w-10 max-md:h-10">
             <FaCalendarDays />
             </div>
-            <div className="text-text flex gap-2 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col">
+            <div className="text-text flex gap-2 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col font-medium">
               {event.date} {event && <IoIosArrowForward className="max-md:hidden" />}{" "}
             </div>
             <div className="text-blueText font-bold max-md:text-[13px] max-md:text-center">

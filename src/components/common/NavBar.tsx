@@ -1,11 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { RiCloseFill } from "react-icons/ri";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
-function NavBar() {
+interface NavBarProps {
+  heroRef: React.RefObject<HTMLDivElement>;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  calendarRef: React.RefObject<HTMLDivElement>;
+  faqRef: React.RefObject<HTMLDivElement>;
+  footerRef: React.RefObject<HTMLDivElement>;
+}
+
+export const NavBar: React.FC<NavBarProps> = ({
+  heroRef,
+  aboutRef,
+  calendarRef,
+  faqRef,
+  footerRef,
+}) => {
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => {
     setMenu(!menu);
@@ -16,28 +30,75 @@ function NavBar() {
       {/* DESKTOP */}
       <div className=" hidden lg:block animate-in fade-in zoom-in bg-white p-4 b">
         <div className="flex justify-between mx-[41px] items-center">
-            <Image src="/logo.png" width={100} height={100} alt="logo" />
+          <Image src="/logo.png" width={100} height={100} alt="logo" />
           <div className="flex items-center gap-[40px] select-none">
-            <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
-            >
-              Home
-            </p>
-            <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
-            >
-              Links
-            </p>
-            <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
-            >
-              Calendar
-            </p>
-            <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
-            >
-              FAQ
-            </p>
+            <Link href="#hero" legacyBehavior className="scroll-mt-[80px] transition-all duration-300 ease-in-out">
+              <a
+                onClick={() =>
+                  heroRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest",
+                  })
+                }
+              >
+                <p
+                  className={`hover:text-orange hover:border-b hover:border-orange hover:font-bold font-medium px-4 py-2 cursor-pointer flex items-center gap-2 text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+                >
+                  Home
+                </p>
+              </a>
+            </Link>
+            <Link href="#about" legacyBehavior>
+            <div className="scroll-mt-[80px] transition-all duration-300 ease-in-out">
+              <a
+                onClick={() =>
+                  heroRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest",
+                    
+                  })
+                }
+              >
+                <p
+                  className={`hover:text-orange hover:border-b hover:border-orange px-4 py-2 cursor-pointer flex items-center gap-2  hover:font-bold font-medium text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+                >
+                  Links
+                </p>
+              </a>
+            </div>
+            </Link>
+            <Link href="#calendar" legacyBehavior>
+              <a
+                onClick={() =>
+                  heroRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest",
+                  })
+                }
+              >
+                <p
+                  className={`hover:text-orange hover:border-b hover:border-orange px-4 py-2 cursor-pointer flex items-center gap-2 hover:font-bold font-medium text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+                >
+                  Calendar
+                </p>
+              </a>
+            </Link>
+            <Link href="#faq" legacyBehavior>
+              <a
+                onClick={() =>
+                  faqRef.current?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <p
+                  className={`hover:text-orange hover:border-b hover:border-orange px-4 py-2 cursor-pointer flex items-center gap-2 hover:font-bold font-medium text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+                >
+                  FAQ
+                </p>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -59,7 +120,7 @@ function NavBar() {
           </div>
           <div className="flex items-center gap-[40px]">
             {menu ? (
-              <RiCloseFill 
+              <RiCloseFill
                 className="cursor-pointer animate-in fade-in zoom-in text-black"
                 onClick={toggleMenu}
               />
@@ -96,6 +157,6 @@ function NavBar() {
       </div>
     </div>
   );
-}
+};
 
 export default NavBar;

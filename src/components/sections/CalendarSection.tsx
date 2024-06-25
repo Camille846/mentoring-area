@@ -141,9 +141,10 @@ function CalendarSection() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center mt-20 mb-20  w-auto">
-      <h2 className="text-[38px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
+    <section className="flex flex-col justify-center items-center mt-20 mb-20  w-auto" id="calendar">
+      <h2 className="flex flex-col items-center justify-center text-[38px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
         Calendar
+        <span className="w-full h-2 b-secondary bg-secondary ml-2 max-md:ml-1"></span>
       </h2>
 
       {/* <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzOIPbjkbctT7D7J9Lt4k6cSFnp5qU85rn5T8g2x3PpOSEStK12voyhpEoD6Ua2HZPcE2wbzuIxLvM/pubhtml?widget=true&amp;headers=false"  width="60%" height="800" className="m-auto flex items-center"></iframe> */}

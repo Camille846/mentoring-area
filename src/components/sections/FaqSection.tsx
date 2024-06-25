@@ -84,10 +84,11 @@ function FaqSection() {
     },
   ];
   return (
-    <section className="bg-background flex flex-col justify-center mt-32 max-md:mx-0">
+    <section className="bg-white flex flex-col justify-center mt-32 max-md:mx-0" id="faq">
       <div className="mx-80 mt-20 max-md:mx-0">
-        <h2 className="text-[32px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
+        <h2 className="flex flex-col items-center justify-center text-[32px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
           Frequently Asked Questions
+          <span className="w-1/2 h-2 b-secondary bg-secondary ml-2 max-md:ml-1"></span>
         </h2>
       </div>
 
@@ -95,8 +96,8 @@ function FaqSection() {
         <Accordion type="multiple" className="text-text max-md:text-[13px]">
           {questions.map((question) => (
             <AccordionItem key={question.id} value={question.id}>
-              <AccordionTrigger>{question.question}</AccordionTrigger>
-              <AccordionContent>{question.answer}</AccordionContent>
+              <AccordionTrigger className="font-bold text-text">{question.question}</AccordionTrigger>
+              <AccordionContent className="font-medium">{question.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

@@ -1,3 +1,4 @@
+import { Press_Start_2P } from "next/font"
 import { text } from "stream/consumers"
 import type { Config } from "tailwindcss"
 
@@ -30,6 +31,10 @@ const config = {
       lightBlue: "#7191c8",
 
     },
+    fontFamily: {
+      sans: ["Montserrat", "sans-serif"],
+      title: ["Press Start 2P", "cursive"],
+    },
     extend: {
       keyframes: {
         "accordion-down": {
@@ -48,7 +53,10 @@ const config = {
       backgroundImage: {
         'hero-image': "url('/hero.png')",
         'bg': "url('/bg.png')",
-      }
+      },
+      transitionDuration: {
+        '300': '300ms', 
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
