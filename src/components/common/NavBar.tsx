@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react";
+import { RiCloseFill } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -59,7 +59,7 @@ function NavBar() {
           </div>
           <div className="flex items-center gap-[40px]">
             {menu ? (
-              <X
+              <RiCloseFill 
                 className="cursor-pointer animate-in fade-in zoom-in text-black"
                 onClick={toggleMenu}
               />

@@ -8,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ChevronRight, CalendarDays, CalendarHeart } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import CarouselItemContent from "./CarouselItemContent";
@@ -143,7 +142,7 @@ function CalendarSection() {
 
   return (
     <section className="flex flex-col justify-center items-center mt-20 mb-20  w-auto">
-      <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
+      <h2 className="text-[38px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
         Calendar
       </h2>
 

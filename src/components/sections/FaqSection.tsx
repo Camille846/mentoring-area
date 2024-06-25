@@ -86,7 +86,7 @@ function FaqSection() {
   return (
     <section className="bg-background flex flex-col justify-center mt-32 max-md:mx-0">
       <div className="mx-80 mt-20 max-md:mx-0">
-        <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
+        <h2 className="text-[32px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
           Frequently Asked Questions
         </h2>
       </div>

@@ -5,6 +5,7 @@ import CalendarSection from "@/components/sections/CalendarSection";
 import FaqSection from "@/components/sections/FaqSection";
 import FooterSection from "@/components/sections/FooterSection";
 import HeroSection from "@/components/sections/HeroSection";
+import SoulSmartSection from "@/components/sections/SoulSmartSection";
 import { motion, useScroll } from "framer-motion";
 // import Leaders from "@/components/sections/Leaders";
 

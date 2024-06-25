@@ -8,7 +8,7 @@ function HeroSection() {
         <Image src="/logo.png" width={180} height={180} alt="logo" />
       </div>
       <h1 className="text-[35.8px] md:text-[75.8px] text-center mt-8 text-primary font-bold">Mentoring Area</h1>
-      <p className="font-semibold text-center my-4 text-text max-md:text-[13px]">On this website you can find everything you need for your mentoring sessions.</p>
+      <p className="font-semibold text-center my-4 text-text max-md:text-[13px] max-md:p-3">On this website you can find everything you need for your mentoring sessions.</p>
     </section>
   );
 }
