@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function FooterSection() {
   return (
-    <section className="flex justify-between px-72 pt-14 pb-14 bg-primary max-md:px-10 max-md:flex-col max-md:items-center max-md:justify-center">
+    <section className="flex justify-between px-72 pt-14 pb-14 bg-primary max-lg:px-10 max-lg:flex-col max-lg:items-center max-lg:justify-center">
         <div className="flex justify-center items-center">
           <a
             href="https://www.soulbilingue.com/"
@@ -42,7 +42,7 @@ function FooterSection() {
         </div>
       </div>
       <div className="flex flex-col gap-10 justify-start pt-10 pb-10 bg-primary">
-        <div className="flex flex-col gap-1.5 max-md:text-center">
+        <div className="flex flex-col gap-1.5 max-lg:text-center">
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold">Links rápidos</span>
           </p>

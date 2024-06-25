@@ -92,7 +92,7 @@ function FaqSection() {
         </h2>
       </div>
 
-      <div className="mx-80 mb-20 flex-start text-text max-md:mx-5">
+      <div className="mx-80 mb-20 flex-start text-text max-lg:mx-5">
         <Accordion type="multiple" className="text-text max-md:text-[13px]">
           {questions.map((question) => (
             <AccordionItem key={question.id} value={question.id}>

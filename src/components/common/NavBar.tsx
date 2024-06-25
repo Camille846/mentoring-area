@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { RiCloseFill } from "react-icons/ri";
+import { RiCloseFill, RiMenuFill } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +24,7 @@ export const NavBar: React.FC<NavBarProps> = ({
   };
 
   return (
-    <div className="md:sticky md:top-0   md:shadow-none z-20 border-b border-[#0005370d]">
+    <div className="md:sticky md:top-0  md:shadow-none z-20 border-b border-[#0005370d]">
       {/* DESKTOP */}
       <div className=" hidden lg:block animate-in fade-in zoom-in bg-white p-4 b">
         <div className="flex justify-between mx-[41px] items-center">
@@ -102,13 +102,13 @@ export const NavBar: React.FC<NavBarProps> = ({
       </div>
       {/* MOBILE */}
       <div
-        className={` block lg:hidden shadow-sm  fixed top-0 w-full z-[999] bg-white py-4 animate-in fade-in zoom-in  ${
+        className={`block lg:hidden shadow-sm  fixed top-0 w-full z-[999] bg-white py-4 animate-in fade-in zoom-in  ${
           menu ? " bg-primary py-2" : ""
         } `}
       >
-        <div className="flex justify-between mx-[10px]">
+        <div className="flex justify-between mx-[10px] ">
           <div className="flex gap-[50px] text-[16px] items-center select-none">
-            <img
+            <Image
               src="/logo.png"
               width={100}
               height={100}
@@ -116,35 +116,33 @@ export const NavBar: React.FC<NavBarProps> = ({
               className="w-[7rem]"
             />
           </div>
-          <div className="flex items-center gap-[40px]">
+          <div className="flex justify-center items-center text-center gap-[40px]">
             {menu ? (
               <RiCloseFill
-                className="cursor-pointer animate-in fade-in zoom-in text-black"
+                className="cursor-pointer animate-in fade-in zoom-in text-primary text-[2rem]"
                 onClick={toggleMenu}
               />
             ) : (
-              <img
-                src="/menu.svg"
-                alt="logo"
-                className="cursor-pointer animate-in fade-in zoom-in"
+              <RiMenuFill
+                className="cursor-pointer animate-in fade-in zoom-in text-primary text-[2rem]"
                 onClick={toggleMenu}
               />
             )}
           </div>
         </div>
         {menu ? (
-          <div className="my-8 select-none animate-in slide-in-from-right">
-            <div className="flex flex-col gap-8 mt-8 mx-4">
-              <p className="text-black cursor-pointer active:text-secondary">
+          <div className="my-8 select-none animate-in slide-in-from-right text-center max-lg:h-[100vh] max-md:p-0 max-lg:p-10 max-lg:bg-bg  max-lg:text-white max-lg:font-bold max-md:text-[1rem] max-lg:text-[2rem]">
+            <div className="flex flex-col gap-8 mt-8 mx-4  max-md:border-t max-md:border-[#0005370d] max-md:pb-4">
+              <p className="text-primary font-semibold cursor-pointer active:text-secondary max-md:pt-5 ">
                 <span> Home</span>
               </p>
-              <p className="text-black cursor-pointer active:text-secondary">
+              <p className="text-primary font-semibold cursor-pointer active:text-secondary ">
                 <span> Links </span>
               </p>
-              <p className="text-black cursor-pointer active:text-secondary">
+              <p className="text-primary font-semibold cursor-pointer active:text-secondary ">
                 <span> Calendar </span>
               </p>
-              <p className="text-black cursor-pointer active:text-secondary">
+              <p className="text-primary font-semibold cursor-pointer active:text-secondary ">
                 <span> FAQ</span>
               </p>
             </div>
