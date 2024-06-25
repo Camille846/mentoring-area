@@ -25,7 +25,10 @@ function AboutSection() {
       title: "Manual",
       description:
         "This comprehensive manual serves as a guide for both new and experienced mentors. It covers a wide range of topics to understand your role as a mentor, offering practical tips and insights to facilitate a successful mentorship experience.",
+      // link: "/manual",
+      // target: "_self",
       link: "https://docs.google.com/document/d/1ysNJbUOWscjcLQ82GXXEzg5Y74jnIGE9xpOQAyKnlk8/edit?usp=sharing",
+      target: "_blank",
     },
     {
       icon: "support",
@@ -33,6 +36,7 @@ function AboutSection() {
       description:
         "Collection of support materials based on different English levels. Access a shared drive with collaborative spreadsheets, interactive platforms designed for engaging mentorship sessions, and the classes schedule for guidance.",
       link: "https://drive.google.com/drive/folders/1J73V0g2UUT6HiICSJgBnNGF37YdpwfVr",
+      target: "_blank",
     },
     {
       icon: "form",
@@ -40,6 +44,7 @@ function AboutSection() {
       description:
         "The Mentoring Validation Form serves as proof that you and your mentee completed your mentoring session. You have to fill it out in the last 5 minutes of each session. Make sure your mentee does the same.",
       link: "https://forms.gle/ASJMfstwgC5BAVPh8",
+      target: "_blank",
     },
     {
       icon: "link",
@@ -47,6 +52,7 @@ function AboutSection() {
       description:
         "Our matching platform connects you with our Soul Students. While you can select up to two students, we encourage you to initially choose one to ensure everyone has a chance to mentor. You can select your second student after 2 days.",
       link: "https://plataformasoulbilingue.herokuapp.com",
+      target: "_blank",
     },
   ];
 
@@ -91,13 +97,14 @@ function AboutSection() {
               },
             }}
           >
+
             {content.link ? (
               <Link
                 href={content.link}
-                target="_blank"
+                target={content.target}
                 rel="noopener noreferrer"
               >
-                <Card className="hover:bg-darkOrange h-72 max-md:h-60 text-white bg-primary cursor-pointer transition-colors	ease-in-out">
+                <Card className="hover:bg-darkOrange h-72 max-md:h-auto  text-white bg-primary cursor-pointer transition-colors	ease-in-out">
                   <CardHeader>
                     {content.icon === "book-open-text" && (
                       <PiBookOpenTextBold className="w-10 h-10 mb-2" />
@@ -152,8 +159,8 @@ function AboutSection() {
           <span className="w-1/5 h-2 b-secondary bg-secondary ml-2 max-md:ml-1"></span>
         </h2>
         <p className="text-center text-lg max-md:text-base text-text max-md:pb-10 mb-8">
-          Soul Smart is the material that the students will use to learn
-          English. It is used during classes and is divided into 5 levels:
+          Soul Smart is the material that the students use as guidance to learn
+          English. It is based on the American English File collection used in classes and is divided into 5 levels:
           Beginner, Elementary, Intermediate, Upper and Advanced. You can use as
           a reference to help your student during the mentoring sessions.
         </p>
