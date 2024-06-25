@@ -49,12 +49,12 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        'hero-image': "url('/hero.png')",
+        'hero-image': "url('/hero_bg.png')",
         'bg': "url('/bg.png')",
       },
       transitionDuration: {
         '300': '300ms', 
-      },
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

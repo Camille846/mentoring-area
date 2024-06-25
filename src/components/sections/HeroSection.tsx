@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
@@ -17,11 +18,20 @@ function HeroSection() {
         On this website you can find everything you need for your mentoring
         sessions.
       </p>
-      <a href="#about">
-        <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold mt-4 hover:bg-orange transition-colors duration-300 max-md:mt-2">
-          Start Game
-        </button>
-      </a>
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
+        <a href="#about">
+          <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold mt-4 hover:bg-orange transition-colors duration-300 max-md:mt-2">
+            Start Game
+          </button>
+        </a>
+      </motion.div>
     </section>
   );
 }
