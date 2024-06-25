@@ -1,5 +1,5 @@
 import { forwardRef, ReactElement } from "react";
-import { Loader2 } from "lucide-react";
+import { BiLoaderCircle } from "react-icons/bi";
 import { Button } from "../ui/button";
 
 type MainButtonProps = {
@@ -95,7 +95,7 @@ const MainButton = forwardRef<HTMLButtonElement, MainButtonProps>(
         ref={ref}
         disabled
       >
-        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+        <BiLoaderCircle className="mr-2 h-4 w-4 animate-spin" />
         {dataLoadingText}
       </Button>
     );
