@@ -37,6 +37,9 @@ export default function Home() {
         <div ref={faqRef} id="faq">
           <FaqSection />
         </div>
+        <div id="footer">
+          <FooterSection />
+        </div>
       </main>
     </motion.div>
   );
