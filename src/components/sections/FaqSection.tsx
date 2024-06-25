@@ -21,13 +21,13 @@ function FaqSection() {
     {
       id: "3",
       question:
-        "What does it happen if my student forgets to complete their mentoring validation form?",
+        "What happens if the student does not fill out the mentoring session validation form?",
       answer:
         "We ask the student to fill out this form during the 5 (five) last minutes of each mentoring session (as you should fill out yours also, and submit it before you say goodbye, so you're sure both of you did it). If for some reason they forget, the student has 24h to complete the form after a mentoring session. If they do not, they won't receive the mentoring points for that session, even though it happened.",
     },
     {
       id: "4",
-      question: "How long each mentoring session should last?",
+      question: "How long should the mentoring session last?",
       answer:
         "At least 40 minutes (if you have any problems, please contact your Leader)",
     },
