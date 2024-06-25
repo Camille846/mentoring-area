@@ -10,7 +10,6 @@ interface NavBarProps {
   aboutRef: React.RefObject<HTMLDivElement>;
   calendarRef: React.RefObject<HTMLDivElement>;
   faqRef: React.RefObject<HTMLDivElement>;
-  footerRef: React.RefObject<HTMLDivElement>;
 }
 
 export const NavBar: React.FC<NavBarProps> = ({
@@ -18,7 +17,6 @@ export const NavBar: React.FC<NavBarProps> = ({
   aboutRef,
   calendarRef,
   faqRef,
-  footerRef,
 }) => {
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => {
