@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -15,27 +16,25 @@ function NavBar() {
       {/* DESKTOP */}
       <div className=" hidden lg:block animate-in fade-in zoom-in bg-white p-4 b">
         <div className="flex justify-between mx-[41px] items-center">
-          <div>
-            <img src="/logo.png" width={100} height={100} alt="logo" />
-          </div>
+            <Image src="/logo.png" width={100} height={100} alt="logo" />
           <div className="flex items-center gap-[40px] select-none">
             <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-grey transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
             >
               Home
             </p>
             <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-grey transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
             >
               Links
             </p>
             <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-grey transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
             >
               Calendar
             </p>
             <p
-              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-grey transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
+              className={`hover:text-secondary hover:border-b hover:border-secondary px-4 py-2 cursor-pointer flex items-center gap-2  font-[500] text-text transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none`}
             >
               FAQ
             </p>
