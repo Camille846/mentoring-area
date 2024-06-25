@@ -15,7 +15,6 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const calendarRef = useRef<HTMLDivElement>(null);
   const faqRef = useRef<HTMLDivElement>(null);
-  const footerRef = useRef<HTMLDivElement>(null);
 
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
@@ -25,7 +24,6 @@ export default function Home() {
           aboutRef={aboutRef} 
           calendarRef={calendarRef} 
           faqRef={faqRef} 
-          footerRef={footerRef}
         />
         <div ref={heroRef} id="hero"> 
           <HeroSection />
@@ -38,9 +36,6 @@ export default function Home() {
         </div>
         <div ref={faqRef} id="faq">
           <FaqSection />
-        </div>
-        <div ref={footerRef} id="footer">
-          <FooterSection />
         </div>
       </main>
     </motion.div>
