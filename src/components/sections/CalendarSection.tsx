@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -9,67 +10,168 @@ import {
 } from "@/components/ui/carousel";
 import { ChevronRight, CalendarDays, CalendarHeart } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import CarouselItemContent from "./CarouselItemContent";
+
+export interface Event {
+  id: string;
+  date: string;
+  event: string;
+}
 
 function CalendarSection() {
   const event_data = [
-    {
-      date: "July 1st to July 19th, 2024",
-      event: "Training",
-      is_last: false,
-    },
-    {
-      date: "July 23, 2024",
-      event: "Welcome Volunteers",
-      is_last: false,
-    },
-    {
-      date: "July 26th to August 9th, 2024",
-      event: "Matches",
-      is_last: true,
-    },
+    [
+      {
+        id: "1",
+        date: "July 1st to July 19th, 2024",
+        event: "Training",
+      },
+      {
+        id: "2",
+        date: "July 17, 2024",
+        event: "Soul Talk hosted by mentor Marcos Trazzini",
+      },
+      {
+        id: "2",
+        date: "July 24, 2024",
+        event: "Welcome Volunteers",
+      },
+      {
+        id: "3",
+        date: "July 26th to August 9th, 2024",
+        event: "Matches",
+      },
+      {
+        id: "4",
+        date: "July 30, 2024",
+        event: "Students' 1st English Class",
+      },
+    ],
+    [
+      {
+        id: "5",
+        date: "July 26th to August 9th, 2024",
+        event: "Matches",
+      },
+      {
+        id: "6",
+        date: "August 8, 2024",
+        event: "1st Fundraising Challenge due September 6th",
+      },
+      {
+        id: "7",
+        date: "August 19, 2024",
+        event: "1st homework due August 26th",
+      },
+    ],
+    [
+      {
+        id: "8",
+        date: "September 10, 2024",
+        event: "1st English Test",
+      },
+      {
+        id: "9",
+        date: "September 16, 2024",
+        event: "2nd homework due September 23rd",
+      },
+      {
+        id: "10",
+        date: "September 30, 2024",
+        event: "Feedback Survey due October 4th",
+      },
+    ],
+    [
+      {
+        id: "11",
+        date: "October 14, 2024",
+        event: "3rd homework due October 21st",
+      },
+      {
+        id: "12",
+        date: "October 17, 2024",
+        event: "2nd Fundraising Challenge due November 15th",
+      },
+      {
+        id: "14",
+        date: "October 22, 2024",
+        event: "2nd English Test",
+      },
+    ],
+    [
+      {
+        id: "16",
+        date: "November 11, 2024",
+        event: "4th homework due November 18th",
+      },
+      {
+        id: "17",
+        date: "November 15, 2024",
+        event: "Deadline for 2nd Fundraising Challenge",
+        
+      },
+      {
+        id: "18",
+        date: "November 19, 2024",
+        event: "Student Application for 2025 open",
+      },
+    ],
+    [
+      {
+        id: "19",
+        date: "Through December",
+        event: "Optional Mentorship Program",
+      },
+      {
+        id: "20",
+        date: "December 3, 2024",
+        event: "3rd English Test",
+      },
+      {
+        id: "21",
+        date: "December 11, 2024",
+        event: "Feedback Survey due December 17th",
+      },
+      {
+        id: "22",
+        date: "December 19, 2024",
+        event: "Final Day: Scholarship Winners Announcement",
+      },
+    ],
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center mt-20 mb-20 px-8">
+    <section className="flex flex-col justify-center items-center mt-20 mb-20  w-auto">
       <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-8 mb-10 text-blueText">
         Calendar
       </h2>
 
-      {/* <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzOIPbjkbctT7D7J9Lt4k6cSFnp5qU85rn5T8g2x3PpOSEStK12voyhpEoD6Ua2HZPcE2wbzuIxLvM/pubhtml?widget=true&amp;headers=false"  width="100%" height="800" frameBorder="0" scrolling="no" className="m-auto"></iframe> */}
+      {/* <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzOIPbjkbctT7D7J9Lt4k6cSFnp5qU85rn5T8g2x3PpOSEStK12voyhpEoD6Ua2HZPcE2wbzuIxLvM/pubhtml?widget=true&amp;headers=false"  width="60%" height="800" className="m-auto flex items-center"></iframe> */}
 
-
-      <Carousel>
-        <CarouselContent>
-          <CarouselItem>
-            <section className="p-10 max-md:p-0">
-              {event_data.map((event, index) => (
-                <div key={index}>
-                  <div className="text-[18px] flex items-center gap-3 max-md:text-[13px] max-md:flex-col">
-                    <div className="text-secondary bg-primary w-16 h-16 rounded-full p-2 flex items-center justify-center max-md:w-10 max-md:h-10">
-                      <CalendarDays />
-                    </div>
-                    <div className="text-text flex gap-2 max-md:text-[13px] max-md:flex-col">
-                      {event.date} {event && <ChevronRight className="max-md:hidden"/>}{" "}
-                    </div>
-                    <div className="text-blueText font-bold max-md:text-[13px] ">{event.event}</div>
-                  </div>
-                  {!event.is_last && (
-                    <div>
-                      <Separator
-                        orientation="vertical"
-                        className="h-[1.5rem] my-1 ml-8 bg-background max-md:bg-white"
-                      />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </section>
+      <Carousel className="w-[50%]">
+        <CarouselContent >
+          <CarouselItem className="flex flex-col justify-center items-center">
+            <CarouselItemContent data={event_data[0]}/>
           </CarouselItem>
-          <CarouselItem>...</CarouselItem>
-          <CarouselItem>...</CarouselItem>
+          <CarouselItem className="p-0 flex flex-col justify-center items-center">
+            <CarouselItemContent data={event_data[1]} />
+          </CarouselItem>
+          <CarouselItem className="p-0 flex flex-col justify-center items-center">
+            <CarouselItemContent data={event_data[2]} />
+          </CarouselItem>
+          <CarouselItem className="p-0 flex flex-col justify-center items-center">
+            <CarouselItemContent data={event_data[3]} />
+          </CarouselItem>
+          <CarouselItem className="p-0 flex flex-col justify-center items-center">
+            <CarouselItemContent data={event_data[4]} />
+          </CarouselItem>
+          <CarouselItem className="p-0 flex flex-col justify-center items-center">
+            <CarouselItemContent data={event_data[5]} />
+          </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="bg-orange text-primary"/>
-        <CarouselNext className="bg-orange text-primary" />
+        <CarouselPrevious className="bg-orange text-primary m-0 p-0" />
+        <CarouselNext className="bg-orange text-primary m-0 p-0" />
       </Carousel>
     </section>
   );

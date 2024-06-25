@@ -15,7 +15,7 @@ function FooterSection() {
           </a>
         </div>
       <div className="flex flex-col gap-5 justify-center items-center pt-10 pb-10 bg-primary">
-        <h2>
+        <h2 className="text-center">
           <span className="text-[15.8px] md:text-[28px] text-white text-center">
             In case you have issues, contact:
           </span>
