@@ -8,8 +8,6 @@ interface ScrollContextType {
 }
 
 const ScrollContext = createContext<ScrollContextType | null>(null);
-const { scrollYProgress } = useViewportScroll()
-const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
 
 const ScrollContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -25,17 +23,9 @@ const ScrollContextProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   };
 
   return (
-    <motion.div
-    style={{ scale }}
-  >
-    <motion.div
-    style={{
-      scaleY: scrollYProgress
-    }} />
     <ScrollContext.Provider value={contextValue}>
       {children}
     </ScrollContext.Provider>
-    </motion.div>
   );
 };
 
