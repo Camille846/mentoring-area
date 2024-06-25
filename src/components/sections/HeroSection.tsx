@@ -3,7 +3,7 @@ import React from 'react';
 
 function HeroSection() {
   return (
-    <section className="flex flex-col justify-center items-center bg-hero-image bg-cover w-full h-[60vh] bg-center">
+    <section className="flex flex-col justify-center items-center bg-hero-image bg-cover w-full h-[100vh] bg-center">
       <div>
         <Image src="/logo.png" width={180} height={180} alt="logo" />
       </div>

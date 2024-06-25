@@ -47,6 +47,7 @@ const config = {
       },
       backgroundImage: {
         'hero-image': "url('/hero.png')",
+        'bg': "url('/bg.png')",
       }
     },
   },

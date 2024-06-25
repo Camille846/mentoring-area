@@ -37,7 +37,7 @@ function AboutSection() {
   ];
 
   return (
-    <section className="pt-10 pb-32 px-8 bg-background">
+    <section className="pt-10 pb-32 px-8 bg-bg bg-origin-padding bg-contain w-full h-full bg-center">
         <h2 className="text-[25.8px] md:text-[55.8px] text-center mt-16 mb-28 text-blueText max-md:mt-5 max-md:mb-10">
           Links
         </h2>
