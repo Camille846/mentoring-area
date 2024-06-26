@@ -40,7 +40,7 @@ function FaqSection() {
     {
       id: "6",
       question:
-        "Can I carry over my 3 mandatory mentoring sessions to next month?",
+        "Can I move this month's mentoring sessions to next month?",
       answer:
         "No, you have from the first to the final day of the mentoring cycle to complete 3 (three) mentoring sessions each month. Please get in touch with your Leader as soon as possible if you have any problems.",
     },
