@@ -21,7 +21,7 @@ function FaqSection() {
     {
       id: "3",
       question:
-        "What happens if the student does not fill out the mentoring session validation form?",
+        "What if my mentee forgets to submit the form?",
       answer:
         "We ask the student to fill out this form during the 5 (five) last minutes of each mentoring session (as you should fill out yours also, and submit it before you say goodbye, so you're sure both of you did it). If for some reason they forget, the student has 24h to complete the form after a mentoring session. If they do not, they won't receive the mentoring points for that session, even though it happened.",
     },
@@ -40,7 +40,7 @@ function FaqSection() {
     {
       id: "6",
       question:
-        "I won't be able to complete the three (3) mandatory mentoring sessions this month. Can I do it the next month?",
+        "Can I carry over my 3 mandatory mentoring sessions to next month?",
       answer:
         "No, you have from the first to the final day of the mentoring cycle to complete 3 (three) mentoring sessions each month. Please get in touch with your Leader as soon as possible if you have any problems.",
     },
@@ -53,7 +53,7 @@ function FaqSection() {
     {
       id: "8",
       question:
-        "How many points do my students get the monthly mentoring sessions?",
+        "How many points do students earn for monthly mentoring?",
       answer:
         "The students gets 10 points per month if completed all mandatory mentorings. ",
     },
@@ -72,7 +72,7 @@ function FaqSection() {
     {
       id: "11",
       question:
-        "My student is struggling with their level, or it is too easy for them. What should I do?",
+        "My student's level seems inappropriate. What should I do?",
       answer:
         "Contact your leader as soon as possible. We will only be able to solve this problem at the beginning of the semester. ",
     },
