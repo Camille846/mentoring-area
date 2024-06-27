@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 function HeroSection() {
   return (
     <section
-      className="flex flex-col justify-center items-center bg-hero-image bg-cover w-full h-[100vh] bg-center"
+      className="flex flex-col justify-center items-center bg-hero-image bg-cover w-full h-[100vh] bg-center bg-no-repeat"
       id="hero"
     >
       <div>
-        <Image src="/logo.png" width={200} height={200} alt="logo" />
+        <Image src="/logo.svg" width={250} height={250} alt="logo" />
       </div>
       <h1 className="text-[35.8px] md:text-[6rem] text-center mt-8 text-primary font-bold">
         Mentoring Area

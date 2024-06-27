@@ -51,6 +51,7 @@ const config = {
       backgroundImage: {
         'hero-image': "url('/hero_bg.png')",
         'bg': "url('/bg.png')",
+        'yellow-card': "url('/yellowcard.png')",
       },
       transitionDuration: {
         '300': '300ms', 

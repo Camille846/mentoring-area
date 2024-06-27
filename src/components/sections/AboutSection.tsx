@@ -25,10 +25,8 @@ function AboutSection() {
       title: "Manual",
       description:
         "This comprehensive manual serves as a guide for both new and experienced mentors. It covers a wide range of topics to understand your role as a mentor, offering practical tips and insights to facilitate a successful mentorship experience.",
-      // link: "/manual",
-      // target: "_self",
-      link: "https://docs.google.com/document/d/1ysNJbUOWscjcLQ82GXXEzg5Y74jnIGE9xpOQAyKnlk8/edit?usp=sharing",
-      target: "_blank",
+      link: "/manual",
+      target: "_self",
     },
     {
       icon: "support",
