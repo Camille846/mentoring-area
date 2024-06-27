@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 
-function ManualPage({ children }: { children: React.ReactNode }) {
+function ManualPage() {
   return (
     <div className="border-b border-[#0005370d] flex flex-col gap-10 justify-between max-md:gap-2 max-md:overflow-y-hidden">
       <div className="block animate-in fade-in zoom-in bg-white p-1 fixed w-full z-50 border-b border-[#0005370d]">
