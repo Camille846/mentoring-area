@@ -42,7 +42,7 @@ function FooterSection() {
         </div>
       </div>
       <div className="flex flex-col gap-10 justify-start pt-10 pb-10 bg-primary">
-        <div className="flex flex-col gap-1.5 max-lg:text-center max-md:hidden">
+        <div className="flex flex-col gap-1.5 max-lg:text-center">
           <p className="text-[14px] md:text-[18px] text-secondary">
             <span className="font-semibold">Access</span> 
           </p>

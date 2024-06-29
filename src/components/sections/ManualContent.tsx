@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BsPatchQuestionFill } from "react-icons/bs";
@@ -10,15 +11,15 @@ import Image from "next/image";
 
 function ManualContent() {
   return (
-    <div className="flex flex-col mt-8 mb-10 text-text px-60 h-[70vh] overflow-y max-md:px-10 max-md:h-[100vh] max-2xl:px-32">
-      <h2 className="text-[38px] md:text-[55.8px] text-center font-bold text-primary">
+    <div className="flex flex-col mt-8 mb-10 text-text lg:px-60 w-11/12 mx-auto h-[70vh] overflow-y max-md:h-[100vh]">
+      <h2 className="text-[38px] md:text-[55.8px] text-center font-bold text-primary" id="soul">
         Manual
         <span className="w-full h-2 b-secondary bg-secondary ml-2 max-md:ml-1"></span>
       </h2>
-      <div className="flex flex-col gap-4 font-medium leading-7" id="#soul">
+      <div className="flex flex-col gap-4 font-medium leading-7">
         <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2">
           <BsPatchQuestionFill className="font-bold text-[2rem]" />
-          <h3 className="text-xl font-semibold flex items-center max-md:text-sm">
+          <h3 className="text-xl font-semibold flex items-center">
             What is Soul Bilíngue?
           </h3>
         </div>
@@ -41,7 +42,7 @@ function ManualContent() {
           young Brazilians.
         </p>
       </div>
-      <div className="flex flex-col gap-4 font-medium leading-7 pt-4" id="#how">
+      <div className="flex flex-col gap-4 font-medium leading-7 pt-4" id="how">
         <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
           <BsPatchQuestionFill className="font-bold text-[2rem]" />
           <h3 className="text-xl font-semibold flex items-center text-start">
@@ -54,7 +55,7 @@ function ManualContent() {
           in a semester-long journey of point-worthy online activities. You can
           check the activities and their respective points below:
         </p>
-        <div className="flex justify-center items-center max-md:hidden">
+        <div className="flex justify-center items-center">
           <Image src="/score.svg" width={1000} height={500} alt="pontos" />
         </div>
         <p>
@@ -131,7 +132,7 @@ function ManualContent() {
       </div>
       <div
         className="flex flex-col gap-4 font-medium leading-7 pt-4"
-        id="#students"
+        id="students"
       >
         <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
           <FaPeopleGroup className="font-bold text-[2rem]" />
@@ -155,7 +156,7 @@ function ManualContent() {
       </div>
       <div
         className="flex flex-col gap-4 font-medium leading-7 pt-4"
-        id="#areas"
+        id="game"
       >
         <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
           <BsPatchQuestionFill className="font-bold text-[2rem]" />
@@ -169,7 +170,7 @@ function ManualContent() {
               Classes
             </span>
           </p>
-          <p>
+          <div>
             The English classes are online group classes held on Tuesdays with
             volunteer teachers. With materials from Oxford University Press, the
             classes last around an hour and a half and are divided by English
@@ -185,7 +186,7 @@ function ManualContent() {
               P.S.: You cannot schedule mentoring sessions at the same time as
               classes.
             </p>
-          </p>
+          </div>
         </div>
         <div className="flex justify-center items-center flex-col gap-2">
           <p className="my-4">
@@ -247,7 +248,7 @@ function ManualContent() {
       </div>
       <div
         className="flex flex-col gap-4 font-medium leading-7 pt-4"
-        id="#mentoring"
+        id="mentoring"
       >
         <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
           <FaHandsHelping className="font-bold text-[2rem]" />
@@ -274,7 +275,8 @@ function ManualContent() {
             reading articles, listening to songs and etc., to support them on
             their learning journey.
           </p>
-          <p className="flex flex-col gap-2 py-3" id="howitworks">
+          <div id="how-mentoring">
+          <p className="flex flex-col gap-2 py-3">
             <span className="font-bold text-lg text-primary">
               How does it work?
             </span>
@@ -288,15 +290,16 @@ function ManualContent() {
             However, always prioritize and incorporate your mentee&apos;s
             feedback on the work and activities.
           </p>
+          </div>
         </div>
-        <div className="container mx-auto p-8">
+        <div>
           <h1 className="text-3xl font-bold mb-8 text-center text-primary">
             Roles and Responsibilities
           </h1>
 
-          <div className="flex justify-between max-2xl:flex-col px-5 py-3 gap-8">
-            <div className="w-1/2 max-2xl:w-full border-2 rounded-lg border-primary bg-background p-5">
-              <h3 className="font-bold text-primary text-lg pb-2">
+          <div className="flex justify-between max-2xl:flex-col lg:px-5 py-3 gap-8">
+            <div className="lg:w-1/2 w-full border-2 rounded-lg border-primary bg-background p-2 lg:p-5">
+              <h3 className="font-bold text-primary text-lg py-2" id="roles">
                 Mentor&apos;s Role
               </h3>
               <ul className="list-disc pl-6 mb-4">
@@ -318,7 +321,7 @@ function ManualContent() {
             </div>
 
             {/* Mentee&apos;s Role div */}
-            <div className="w-1/2 max-2xl:w-full border-2 rounded-lg border-primary bg-background p-5">
+            <div className="lg:w-1/2 w-full border-2 rounded-lg border-primary bg-background p-5">
               <h3 className="font-bold text-primary text-lg pb-2">
                 Mentee&apos;s Role
               </h3>
@@ -386,7 +389,7 @@ function ManualContent() {
               </li>
             </ul>
           </div>
-          <div className="py-3" id="form">
+          <div className="py-3" id="validation">
             <p className="flex flex-col gap-2 py-3">
               <span className="font-bold text-lg text-primary">
                 Validation Form
@@ -442,7 +445,7 @@ function ManualContent() {
           </div>
           <div
             className="flex flex-col gap-4 font-medium leading-7 pt-4"
-            id="#matching"
+            id="matching"
           >
             <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
               <IoFootsteps className="font-bold text-[2rem]" />
@@ -575,7 +578,7 @@ function ManualContent() {
                 </li>
               </ul>
             </div>
-            <div id="firstmentoring">
+            <div id="first">
               <p className="flex flex-col gap-2">
                 <span className="font-bold text-lg text-primary py-3">
                   First Mentoring
@@ -621,8 +624,8 @@ function ManualContent() {
                 have in common. Always take notes on what&apos;s important for
                 them and you can use during the mentorings;
               </p>
-              <div className="bg-background border-2 text-primary border-primary p-4 rounded-md shadow-sm flex flex-col gap-2 mt-4 mb-8">
-                <p className="py-3">
+              <div className="bg-background border-2 text-primary border-primary lg:p-4 rounded-md shadow-sm flex flex-col gap-2 mt-4 mb-8">
+                <p className="py-3 px-3">
                   Here are{" "}
                   <span className="text-primary font-semibold border-b-2 border-secondary">
                     {" "}
@@ -630,7 +633,7 @@ function ManualContent() {
                   </span>{" "}
                   to get to know your mentee better:
                 </p>
-                <ul className="list-disc italic pl-10 max-2xl:text-base">
+                <ul className="list-disc italic pl-6 ml:pl-10 max-2xl:text-base">
                   <li className="py-1">Why do you want to learn English?</li>
                   <li className="py-1">What do you like to do in your free time?</li>
                   <li className="py-1">What are your favorite types of music?</li>
@@ -684,7 +687,7 @@ function ManualContent() {
           </div>
           <div
             className="flex flex-col gap-4 font-medium leading-7 pt-4"
-            id="#tips"
+            id="tips"
           >
             <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
               <FaClipboardList className="font-bold text-[2rem]" />
@@ -788,7 +791,6 @@ function ManualContent() {
           </div>
           <div
             className="flex flex-col gap-4 font-medium leading-7 pt-4"
-            id="#other"
           >
             <div className="flex gap-2 text-primary border-b-2 border-[#0005370d] py-2 text-start">
               <AiFillAlert className="font-bold text-[2rem]" />
@@ -797,7 +799,7 @@ function ManualContent() {
               </h3>
             </div>
             <div className="mb-4">
-              <h3 className="font-bold py-2 text-lg text-primary">
+              <h3 className="font-bold py-2 text-lg text-primary" id="english">
                 I have English related questions!
               </h3>
               <p>
@@ -815,7 +817,7 @@ function ManualContent() {
               </p>
             </div>
             <div className="mb-4">
-              <h3 className="font-bold py-2 text-lg text-primary max-md:text-base">
+              <h3 className="font-bold py-2 text-lg text-primary max-md:text-base" id="support">
                 What if my student needs psychological support?
               </h3>
               <p>
@@ -833,7 +835,7 @@ function ManualContent() {
               </p>
             </div>
             <div className="mb-4">
-              <h3 className="font-bold py-2 text-lg text-primary max-md:text-base">
+              <h3 className="font-bold py-2 text-lg text-primary max-md:text-base" id="clubs">
                 Soul Clubs
               </h3>
               <p>

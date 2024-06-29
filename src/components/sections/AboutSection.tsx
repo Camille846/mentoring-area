@@ -41,7 +41,7 @@ function AboutSection() {
       title: "Mentoring Validation Form",
       description:
         "The Mentoring Validation Form serves as proof that you and your mentee completed your mentoring session. You have to fill it out in the last 5 minutes of each session. Make sure your mentee does the same.",
-      link: "https://forms.gle/ASJMfstwgC5BAVPh8",
+      link: "https://forms.gle/bXg9KfeDsHYKt4Vf9",
       target: "_blank",
     },
     {
