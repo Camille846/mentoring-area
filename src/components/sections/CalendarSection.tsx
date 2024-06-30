@@ -23,7 +23,7 @@ function CalendarSection() {
     [
       {
         id: "1",
-        date: "July 1st to July 19th, 2024",
+        date: "July 1 - July 19, 2024",
         event: "Training",
       },
       {
@@ -38,7 +38,7 @@ function CalendarSection() {
       },
       {
         id: "3",
-        date: "July 26th to August 9th, 2024",
+        date: "July 26 - August 9, 2024",
         event: "Matches",
       },
       {
@@ -50,45 +50,50 @@ function CalendarSection() {
     [
       {
         id: "5",
-        date: "July 26th to August 9th, 2024",
-        event: "Matches",
+        date: "August 1, 2024",
+        event: "Mentorship Program begins",
       },
       {
         id: "6",
+        date: "August 9, 2024",
+        event: "Deadline for matches",
+      },
+      {
+        id: "7",
         date: "August 8, 2024",
         event: "1st Fundraising Challenge due September 6th",
       },
       {
-        id: "7",
+        id: "8",
         date: "August 19, 2024",
         event: "1st homework due August 26th",
       },
     ],
     [
       {
-        id: "8",
+        id: "9",
         date: "September 10, 2024",
         event: "1st English Test",
       },
       {
-        id: "9",
+        id: "10",
         date: "September 16, 2024",
         event: "2nd homework due September 23rd",
       },
       {
-        id: "10",
+        id: "11",
         date: "September 30, 2024",
         event: "Feedback Survey due October 4th",
       },
     ],
     [
       {
-        id: "11",
+        id: "12",
         date: "October 14, 2024",
         event: "3rd homework due October 21st",
       },
       {
-        id: "12",
+        id: "13",
         date: "October 17, 2024",
         event: "2nd Fundraising Challenge due November 15th",
       },
@@ -100,40 +105,40 @@ function CalendarSection() {
     ],
     [
       {
-        id: "16",
+        id: "15",
         date: "November 11, 2024",
         event: "4th homework due November 18th",
       },
       {
-        id: "17",
+        id: "16",
         date: "November 15, 2024",
         event: "Deadline for 2nd Fundraising Challenge",
         
       },
       {
-        id: "18",
+        id: "17",
         date: "November 19, 2024",
         event: "Student Application for 2025 open",
       },
     ],
     [
       {
-        id: "19",
+        id: "18",
         date: "Through December",
         event: "Optional Mentorship Program",
       },
       {
-        id: "20",
+        id: "19",
         date: "December 3, 2024",
         event: "3rd English Test",
       },
       {
-        id: "21",
+        id: "20",
         date: "December 11, 2024",
         event: "Feedback Survey due December 17th",
       },
       {
-        id: "22",
+        id: "21",
         date: "December 19, 2024",
         event: "Final Day: Scholarship Winners Announcement",
       },
