@@ -28,7 +28,9 @@ export const NavBar: React.FC<NavBarProps> = ({
       {/* DESKTOP */}
       <div className=" hidden lg:block animate-in fade-in zoom-in bg-background p-2 z-50">
         <div className="flex justify-between mx-[41px] items-center">
-          <Image src="/logo.png" width={60} height={60} alt="logo" />
+        <div className="max-w-24 max-h-24">
+          <Image src="/logo.svg" width={65} height={65} alt="logo" />
+        </div>
           <div className="flex items-center gap-[40px] select-none">
             <Link href="#hero" legacyBehavior className="scroll-mt-[80px] transition-all duration-300 ease-in-out">
               <a
