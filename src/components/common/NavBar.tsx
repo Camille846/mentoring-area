@@ -104,18 +104,17 @@ export const NavBar: React.FC<NavBarProps> = ({
       </div>
       {/* MOBILE */}
       <div
-        className={`block lg:hidden shadow-sm  fixed top-0 w-full z-[999] bg-white py-4 animate-in fade-in zoom-in  ${
+        className={`block lg:hidden shadow-sm  fixed top-0 w-full z-[999] bg-white animate-in fade-in zoom-in  ${
           menu ? " bg-primary py-2" : ""
         } `}
       >
-        <div className="flex justify-between mx-[10px] ">
+        <div className="flex justify-between mx-[10px]">
           <div className="flex gap-[50px] text-[16px] items-center select-none">
             <Image
               src="/logo.svg"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               alt="logo"
-              className="w-[7rem]"
             />
           </div>
           <div className="flex justify-center items-center text-center gap-[40px]">
