@@ -26,7 +26,7 @@ export const NavBar: React.FC<NavBarProps> = ({
   return (
     <div className="md:sticky md:top-0  md:shadow-none z-20 border-b border-[#0005370d]">
       {/* DESKTOP */}
-      <div className=" hidden lg:block animate-in fade-in zoom-in bg-background p-2 z-50">
+      <div className=" hidden lg:block animate-in fade-in zoom-in bg-background px-2 z-50">
         <div className="flex justify-between mx-[41px] items-center">
         <div className="max-w-24 max-h-24">
           <Image src="/logo.svg" width={65} height={65} alt="logo" />
