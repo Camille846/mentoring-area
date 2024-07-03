@@ -33,7 +33,7 @@ function CalendarSection() {
       },
       {
         id: "3",
-        date: "July 24, 2024",
+        date: "July 24, 7 PM BRT",
         event: "Welcome Volunteers",
       },
       {
