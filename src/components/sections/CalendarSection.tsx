@@ -29,7 +29,7 @@ function CalendarSection() {
       {
         id: "2",
         date: "July 17, 6 PM BRT",
-        event: "Soul Talk hosted by mentor Marcos Trazzini",
+        event: "TalkSoul hosted by mentor Marcos Trazzini",
       },
       {
         id: "3",
