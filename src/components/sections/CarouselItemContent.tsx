@@ -20,7 +20,7 @@ function CarouselItemContent({ data }: { data: Event[] }) {
             {event.id === "2" ? (
               <div className="text-blueText font-bold max-md:text-[13px] max-md:text-center">
                 <a
-                href="https://us06web.zoom.us/j/9671078470?omn=86486453963" 
+                href="https://us06web.zoom.us/j/86486453963" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blueText flex items-center gap-2 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col font-bold hover:text-orange transition-colors" 
