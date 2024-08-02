@@ -55,6 +55,11 @@ function CalendarSection() {
       },
       {
         id: "7",
+        date: "August 7, 7 PM BRT",
+        event: "TalkSoul hosted by teacher Raul",
+      },
+      {
+        id: "8",
         date: "August 9, 2024",
         event: "Deadline for matches",
       },
