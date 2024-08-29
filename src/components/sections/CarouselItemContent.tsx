@@ -11,29 +11,34 @@ function CarouselItemContent({ data }: { data: Event[] }) {
       {data.map((event, index) => (
         <div key={index}>
           <div className="text-[18px] flex items-center gap-3 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col">
-            <div className="text-secondary text-xl bg-primary w-16 h-16 rounded-full flex items-center justify-center max-md:w-10 max-md:h-10">
-            <FaCalendarDays />
+            <div
+                className="text-secondary text-xl bg-primary w-16 h-16 rounded-full flex items-center justify-center max-md:w-10 max-md:h-10">
+              <FaCalendarDays/>
             </div>
-            <div className="text-text flex items-center gap-2 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col font-medium">
-              {event.date} {event && <IoIosArrowForward className="max-md:hidden" />}{" "}
+            <div
+                className="text-text flex items-center gap-2 text-sm md:text-[13px] lg:text-[16px] max-md:flex-col font-medium">
+              {event.date} {event && <IoIosArrowForward className="max-md:hidden"/>}{" "}
             </div>
-            {event.id === "7" ? (
-              <div className="text-blueText font-bold max-md:text-[13px] max-md:text-center">
-                <a
-                href="https://meet.google.com/uao-cstr-tos" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blueText flex items-center gap-2 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col font-bold hover:text-orange transition-colors" 
-              >
-                {event.event}
-                <FaExternalLinkAlt className="text-secondary text-sm" />
-              </a>
-              </div>
-            ) : (
-              <div className="text-blueText font-bold max-md:text-[13px] max-md:text-center">
-                {event.event}
-              </div>
-            )}
+            {/*{event.id === "7" ? (*/}
+            {/*  <div className="text-blueText font-bold text-sm md:text-[13px] lg:text-[16px] max-md:text-center">*/}
+            {/*    <a*/}
+            {/*    href="https://meet.google.com/uao-cstr-tos" */}
+            {/*    target="_blank"*/}
+            {/*    rel="noopener noreferrer"*/}
+            {/*    className="text-blueText flex items-center text-center gap-2 max-md:text-[13px] max-xl:text-[13px] max-md:flex-col font-bold hover:text-orange transition-colors"*/}
+            {/*  >*/}
+            {/*    {event.event}*/}
+            {/*    <FaExternalLinkAlt className="text-secondary text-sm" />*/}
+            {/*  </a>*/}
+            {/*  </div>*/}
+            {/*) : (*/}
+            {/*  <div className="text-blueText font-bold text-sm md:text-[13px] lg:text-[16px] max-md:text-center">*/}
+            {/*    {event.event}*/}
+            {/*  </div>*/}
+            {/*)}*/}
+            <div className="text-blueText font-bold text-sm md:text-[13px] lg:text-[16px] max-md:text-center">
+              {event.event}
+            </div>
           </div>
           {!event && (
             <div>
