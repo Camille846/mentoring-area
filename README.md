@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Plataforma deve ser informativa para fácil acesso a links e calendário do programa aos usuários.
+Plataforma deve ser informativa para fácil acesso a links e calendário do programa aos usuários da Soul Bilíngue.
 
 ## Feito com
 
