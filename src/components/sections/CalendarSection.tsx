@@ -121,6 +121,11 @@ function CalendarSection() {
     [
       {
         id: "16",
+        date: "Nov 1, 2024",
+        event: "Interest Form for 2025 open",
+      },
+      {
+        id: "16",
         date: "Nov 11, 2024",
         event: "4th homework due Nov 18th",
       },
@@ -132,6 +137,12 @@ function CalendarSection() {
       },
       {
         id: "18",
+        date: "Nov 18, 2024",
+        // event: "Mentors and teachers application for 2025 open",
+        event: "2025 Application open for mentors and teachers",
+      },
+      {
+        id: "19",
         date: "Nov 19, 2024",
         event: "Student Application for 2025 open",
       },

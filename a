@@ -1,0 +1,7 @@
+=ÍNDICE(IMPORTRANGE("10xc_nLvK7SuiMejieeYExv1P5B6ukDEmhAIWmmvRUo4"; "Mentores!L:L"); CORRESP(MÁXIMO(SE(IMPORTRANGE("10xc_nLvK7SuiMejieeYExv1P5B6ukDEmhAIWmmvRUo4"; "Mentores!C:C")=
+B5
+; IMPORTRANGE("10xc_nLvK7SuiMejieeYExv1P5B6ukDEmhAIWmmvRUo4"; "Mentores!A:A"))); IMPORTRANGE("10xc_nLvK7SuiMejieeYExv1P5B6ukDEmhAIWmmvRUo4"; "Mentores!A:A");
+0
+))
+
+=SE(CONT.SES(IMPORTRANGE("10xc_nLvK7SuiMejieeYExv1P5B6ukDEmhAIWmmvRUo4"; "interest!C:C"); B5)>0; "Sim"; "Não")
