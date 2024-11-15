@@ -1,5 +1,6 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {FaGithub, FaLinkedin} from "react-icons/fa";
 import Image from "next/image";
 
 function FooterSection() {
@@ -40,15 +41,24 @@ function FooterSection() {
             </a>
           </p>
         </div>
+        <div className="flex flex-col items-center gap-2 mt-2">
+          <p className="text-[12px] md:text-[16px] text-darkOrange text-center flex flex-col items-center">
+            &copy; 2024 All rights reserved
+            <a href="https://www.linkedin.com/in/camillegomes" target="_blank" rel="noreferrer"
+               className="flex gap-2 text-darkOrange font-bold hover:text-white">
+              <p className="text-[12px] md:text-[16px] font-semibold">Developed by Camille Gomes</p>
+            </a>
+          </p>
+        </div>
       </div>
       <div className="flex flex-col gap-10 justify-start pt-10 pb-10 bg-primary">
         <div className="flex flex-col gap-1.5 max-lg:text-center">
           <p className="text-[12px] md:text-[16px] text-secondary">
-            <span className="font-semibold">Access</span> 
+            <span className="font-semibold">Access</span>
           </p>
           <p className="text-[12px] md:text-[16px] text-white hover:text-orange">
             <a href="https://www.soulbilingue.com/quemsomos" target="_blank">
-            About
+              About
             </a>
           </p>
           <p className="text-[12px] md:text-[16px] text-white hover:text-orange">
